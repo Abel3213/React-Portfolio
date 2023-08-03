@@ -1,32 +1,32 @@
 const Navbar = () => {
   return (
-    <div className='container-fluid d-flex justify-content-between'>
-      <div
-        flex-row
-        bd-highlight
-        mb-3
-        className='d-inline-flex flex-row bd-highlight mb-3'
-      >
-        <a className='navbar-brand' href='#home'>
-          Abel Perez
-        </a>
-      </div>
-      <nav className='d-inline-flex flex-row bd-highlight'>
-        <a className='nav-item nav-link' href='#about-me'>
-          About Me
-        </a>
-
-        <a className='nav-item nav-link' href='#work'>
-          Portfolio
-        </a>
-
-        <a className='nav-item nav-link' href='#contact-info'>
-          Contact
-        </a>
-
-        <a className='nav-item nav-link' href='#resume-info'>
-          Resume
-        </a>
+    <div id='header' className=' d-flex flex-column align-items-center '>
+      <h1 className='navbar-brand' href='/'>
+        Abel Perez
+      </h1>
+      <nav className="navbar navbar-expand-lg text-center ">
+        <ul>
+          <li className='btn black spaceOut'>
+            <a className='nav-item linkDecoration container text-center' href='/aboutme'>
+              About Me
+            </a>
+          </li>
+          <li className='btn black spaceOut'>
+            <a className='nav-item linkDecoration container text-center' href='/projects'>
+              Projects
+            </a>
+          </li>
+          <li className='btn black spaceOut'>
+            <a className='nav-item linkDecoration container text-center' href='/contact'>
+              Contact
+            </a>
+          </li>
+          <li className='btn black spaceOut'>
+            <a className='nav-item linkDecoration container text-center' href='/resume'>
+              Resume
+            </a>
+          </li>
+        </ul>
       </nav>
     </div>
   );

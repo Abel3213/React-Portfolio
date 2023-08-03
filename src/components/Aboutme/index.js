@@ -1,19 +1,16 @@
-import Myimg from './myimg.jpg';
+// import Myimg from './myimg.jpg';
 
 const Aboutme = () => {
   return (
-    <section className='container-fluid aboutMe d-flex justify-content-between'>
-      <div className='d-inline-flex description'>
-        <h2>
-          About Me
-          <p>
-            Hi my name is Abel Perez, and i'm a new web developer hoping to
-            learn new skills to help better myself in my journey.
-          </p>
-        </h2>
+    <section id="about-me" className="about-me d-flex">
+      <div className="description">
+        <h2>About Me</h2>
+        <p>
+          Hi my name is Abel Perez, and I'm a passionate software engineer who loves creating innovative solutions to complex problems. With a keen eye for detail and a love for learning, I'm always on the lookout for new technologies and ways to improve my skills. Let's build something great together!
+        </p>
       </div>
-      <div className='d-inline-flex my-img'>
-        <img src={Myimg} style={{ width: '100%' }} alt='cover' />
+      <div className="my-img">
+        <img src="./myimg.jpg" alt="" />
       </div>
     </section>
   );
